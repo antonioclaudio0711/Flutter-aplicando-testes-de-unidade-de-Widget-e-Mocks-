@@ -6,19 +6,19 @@ void main() {
     'BankModel deposit tests',
     () {
       test(
-        'BankModel deposit should turn points into 20',
+        'BankModel deposit should turn points into 10',
         () {
           final BankModel depositPointsBank = BankModel();
           depositPointsBank.deposit(10);
-          expect(depositPointsBank.points, 20);
+          expect(depositPointsBank.points, 10);
         },
       );
       test(
-        'BankModel deposit should turn available into 100',
+        'BankModel deposit should turn available into 10',
         () {
           final BankModel depositAvailableBank = BankModel();
           depositAvailableBank.deposit(10);
-          expect(depositAvailableBank.available, 100);
+          expect(depositAvailableBank.available, 10);
         },
       );
 
@@ -55,11 +55,11 @@ void main() {
       );
 
       test(
-        'BankModel transfer should turn spent into 20',
+        'BankModel transfer should turn spent into 10',
         () {
           final BankModel transferSpentBank = BankModel();
           transferSpentBank.transfer(10);
-          expect(transferSpentBank.spent, 20);
+          expect(transferSpentBank.spent, 10);
         },
       );
     },

@@ -5,14 +5,14 @@ class BankModel {
   double points = 0;
 
   void deposit(double money) {
-    available = available + (10 * money);
+    available = available + money;
     earned = earned + money;
-    points = points + (2 * money);
+    points = points + money;
   }
 
   void transfer(double money) {
     available = available - money;
     points = points + money;
-    spent = spent + (2 * money);
+    spent = spent + money;
   }
 }
